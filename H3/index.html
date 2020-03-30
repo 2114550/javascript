@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        background-color: lightslategrey;
+    }
+    img {
+        height: 300px;
+        width: 300px;
+        border: 0;
+    }
+    #pics {
+        width: 900px;
+        heigth: 900px;
+        border: solid 1px black;
+        font-size: 0;
+        margin: auto;
+    }
+</style>
+<body>
+<h1>bruhé moment</h1>
+<div id="pics">
+    <img src="man1.jpg" alt="mokey1">
+    <img src="man2.jpg" alt="mokey2">
+    <img src="man3.jpg" alt="mokey3">
+    <img src="man4.jpg" alt="mokey4">
+    <img src="man5.jpg" alt="mokey5">
+    <img src="man6.jpg" alt="mokey6">
+    <img src="man7.jpg" alt="mokey7">
+    <img src="man8.jpg" alt="mokey8">
+    <img src="man9.jpg" alt="mokey9">
+</div>
+<script>
+    var plaatjes = document.getElementsByTagName("img");
+    var randomNumbers = [];
+    var random = 0;
+    while(randomNumbers.length < 9) {
+        random = Math.floor(Math.random()*9)+1;
+        if(randomNumbers.lastIndexOf(random) == -1) {
+            randomNumbers.push(random);
+        }
+    }
+    random = 0;
+    for(var plaatje in plaatjes) {
+        plaatjes[plaatje].src = "man" + randomNumbers[random] + ".jpg";
+        random++;
+    }
+/*
+    for (var i = 0; i < plaatjes.length; i++){
+        random = Math.floor(Math.random()*9)+1;
+        plaatjes[i].src = "man" + random + ".jpg";
+    }
+
+ */
+</script>
+</body>
+</html>
