@@ -1,7 +1,7 @@
 var pictureHolder;
 pics = document.getElementById("pics");
 createPicsHolder();
-createImages()
+createImages();
 function createPicsHolder() {
 
     for (var i = 0; i < 9; i++) {

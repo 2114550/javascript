@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Nnmmm
+    </title>
+</head>
+
+<body>
+<div align="center">
+    <h1></h1>
+    <p></p>
+</div>
+
+<script>
+    var mijnauto ={
+        merk: "Mini Cooper",
+        kleur: "Geel",
+        snelheid: 0,
+
+        gasgeven: function() {
+            this.snelheid += 5;
+            console.log(this.snelheid);
+        },
+
+        toeteren: function() {
+            console.log("beep")
+        }
+    };
+
+    console.log(mijnauto.merk);
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.toeteren();
+</script>
+</body>
+</html>
